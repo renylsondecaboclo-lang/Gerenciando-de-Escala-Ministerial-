@@ -1,0 +1,5 @@
+{
+  "name": "Gerenciador de Escalas Ministeriais",
+  "description": "Um aplicativo para gerenciar escalas de equipes de ministérios da igreja de forma fácil e intuitiva. Permite criar escalas, gerenciar voluntários, agendar eventos e gerar relatórios, com um design moderno e focado em dispositivos móveis.",
+  "requestFramePermissions": []
+}
