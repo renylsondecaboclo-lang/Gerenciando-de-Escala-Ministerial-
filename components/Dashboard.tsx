@@ -122,7 +122,7 @@ const Dashboard: React.FC<DashboardProps> = ({ setActiveView }) => {
                     </button>
                 )}
                 {hasPermission('viewEventos') && (
-                     <button onClick={() => setActiveView('eventos')} className="bg-event-brown text-white p-4 rounded-lg shadow-lg hover:bg-opacity-80 transition-colors flex flex-col items-center justify-center text-center">
+                     <button onClick={() => setActiveView('eventos')} className="bg-blue-600 text-white p-4 rounded-lg shadow-lg hover:bg-blue-700 transition-colors flex flex-col items-center justify-center text-center">
                         <EventIcon size={32} className="mb-2"/>
                         <span className="font-bold text-lg">Eventos</span>
                     </button>

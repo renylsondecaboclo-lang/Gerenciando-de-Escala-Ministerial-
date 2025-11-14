@@ -49,7 +49,7 @@ const EventsView: React.FC<EventsViewProps> = ({ onViewSchedule }) => {
                     <p className="text-white/80">Planeje e organize as escalas para eventos especiais.</p>
                 </div>
                 
-                <div className="bg-event-brown p-6 rounded-lg shadow-2xl">
+                <div className="bg-blue-600 p-6 rounded-lg shadow-2xl">
                     <div className="space-y-4">
                         {eventos.map(evento => (
                             <div key={evento.id} className="bg-white/90 text-event-brown p-4 rounded-lg shadow-md flex items-start space-x-4 hover:shadow-lg transition-shadow">
