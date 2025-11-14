@@ -52,7 +52,7 @@ const EventsView: React.FC<EventsViewProps> = ({ onViewSchedule }) => {
                 <div className="bg-blue-600 p-6 rounded-lg shadow-2xl">
                     <div className="space-y-4">
                         {eventos.map(evento => (
-                            <div key={evento.id} className="bg-white/90 text-event-brown p-4 rounded-lg shadow-md flex items-start space-x-4 hover:shadow-lg transition-shadow">
+                            <div key={evento.id} className="bg-white/90 text-bordeaux p-4 rounded-lg shadow-md flex items-start space-x-4 hover:shadow-lg transition-shadow">
                                 <div className="bg-bordeaux text-white rounded-lg p-3 flex flex-col items-center justify-center">
                                     <span className="text-sm font-bold">{new Date(evento.dataInicio + 'T00:00:00').toLocaleString('pt-BR', { month: 'short' })}</span>
                                     <span className="text-2xl font-bold">{new Date(evento.dataInicio + 'T00:00:00').getDate()}</span>
