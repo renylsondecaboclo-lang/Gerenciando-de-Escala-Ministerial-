@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { View, Permission } from '../types';
 import { HomeIcon, CalendarIcon, UsersIcon, EventIcon, ReportIcon, ShieldIcon } from './icons';
@@ -25,7 +24,10 @@ const BottomNav: React.FC<BottomNavProps> = ({ activeView, setActiveView }) => {
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-bordeaux-light border-t border-white/10 shadow-lg z-50">
-      <div className={`container mx-auto grid grid-cols-${visibleNavItems.length}`}>
+      <div
+        className="container mx-auto grid"
+        style={{ gridTemplateColumns: `repeat(${visibleNavItems.length}, minmax(0, 1fr))` }}
+      >
         {visibleNavItems.map(({ view, label, icon: Icon }) => (
           <button
             key={view}
